@@ -1,6 +1,7 @@
 
 import './App.css'
 import Count from './Counting'
+import Users from './UsersEffects'
 
 function App() {
   const bg ={
@@ -22,6 +23,8 @@ function App() {
   return (
     <>
     <h3>Vite + React</h3>
+
+    <Users></Users>
 
     <Count></Count>
 

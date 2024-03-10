@@ -13,7 +13,7 @@ import "./Countries.css"
     return
    }
   return (
-    <div className="country {}">
+    <div className="country">
       <h3>Name: {replace ?' ':item.name.official}</h3>
       <h3>Name: {}</h3>
       <h4 id="h4">Area: { replace ?' ':item.area} </h4>

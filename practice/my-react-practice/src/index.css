@@ -1,0 +1,24 @@
+.marg{
+  margin: auto;
+  color: rgb(8, 0, 0);
+  border: 2px solid saddlebrown;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(128, 0, 94, 0.249),rgba(255, 166, 0, 0.702), rgba(73, 143, 2, 0.605));
+  padding: 20px;
+  max-width: 800px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text{
+  background: linear-gradient(to right, rgb(241, 3, 249),rgb(5, 234, 246), rgb(36, 254, 3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 35px;
+}e
+.hidde{
+  background-color: aqua;
+}
