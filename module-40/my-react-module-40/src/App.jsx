@@ -4,10 +4,10 @@ import Countries from './components/countries/Countries'
 
 function App() {
    return (
-    <>
-      <h1>Vite + React</h1>
+    <div className='body'>
+      <h1 className='color'>Showing All Countries By React</h1>
       <Countries></Countries>
-    </>
+    </div>
   )
 }
 
