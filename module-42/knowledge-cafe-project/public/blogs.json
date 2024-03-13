@@ -1,0 +1,48 @@
+
+[
+  {
+    "id": 1,
+    "profile_img": "https://i.postimg.cc/FsYbPYkg/HD-Space-Wallpaper-For-Background-4.jpg",
+    "title": "The Great Adventure",
+    "cover_img": "https://i.postimg.cc/63kSJYyt/pexels-pixabay-67823.jpg",
+    "watch_time": 12,
+    "author_name": "John Smith",
+    "publish":"10-10-2020"
+  },
+  {
+    "id": 2,
+     "profile_img": "https://i.postimg.cc/FsYbPYkg/HD-Space-Wallpaper-For-Background-4.jpg",
+    "title": "Mystery at Midnight",
+    "cover_img": "https://i.postimg.cc/63kSJYyt/pexels-pixabay-67823.jpg",
+    "watch_time": 9,
+    "author_name": "Jane Doe",
+    "publish":"10-10-2020"
+  },
+  {
+    "id": 3,
+     "profile_img": "https://i.postimg.cc/FsYbPYkg/HD-Space-Wallpaper-For-Background-4.jpg",
+    "title": "Fantasy World",
+    "cover_img": "https://i.postimg.cc/63kSJYyt/pexels-pixabay-67823.jpg",
+    "watch_time": 10,
+    "author_name": "David Johnson",
+    "publish":"10-10-2020"
+  },
+  {
+    "id": 4,
+    "profile_img": "https://i.postimg.cc/FsYbPYkg/HD-Space-Wallpaper-For-Background-4.jpg",
+    "title": "Sci-Fi Odyssey",
+    "cover_img": "https://i.postimg.cc/63kSJYyt/pexels-pixabay-67823.jpg",
+    "watch_time": 10,
+    "author_name": "Emily Rogers",
+    "publish":"10-10-2020"
+  },
+  {
+    "id": 5,
+     "profile_img": "https://i.postimg.cc/FsYbPYkg/HD-Space-Wallpaper-For-Background-4.jpg",
+    "title": "hello ",
+    "cover_img": "https://i.postimg.cc/63kSJYyt/pexels-pixabay-67823.jpg",
+    "watch_time": 10,
+    "author_name": "Michael Williams",
+    "publish":"10-10-2020"
+  }
+]
