@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "./ShowData.css"
 import CountryDetail from "./countries-details/CountryDetail";
+let visitBtn= document.getElementById('visit-button')
+// visitBtn.className
+// console.log(visitBtn)
  const ShowData = ({item , handleVisitedCountries, handleFlags}) => {
-  // console.log(handleFlags)
+  
   let replace = false;
   if(item.area===20770){
   replace=true
@@ -21,11 +24,12 @@ import CountryDetail from "./countries-details/CountryDetail";
       <h3 style={{color:visited?'purple':"tomato"}}>{replace ?' ':item.name.common}</h3>
       <img src={replace ?' ':item.flags.png} alt="" srcset="" />
       <p>Official name: {item.name.official}</p>
-      {/* <p>Capital: {item.capital}</p> */}
+      {/* <p>Capital: {item.capital}</p */}
       <p>Capital: {item.capital}</p>
       <p>Total Population: {item.population}</p>
       <h4 id="h4">Area: { replace ?' ':item.area} </h4>
-      <button onClick={(()=>handleVisitedCountries(item))}>Mark Visited</button>
+      <button id="visit-button" onClick={function(event){handleVisitedCountries(item)}} oncl>Mark Visited</button>
+      {/* <button id="visit-button" onClick={(()=>handleVisitedCountries(item)) ( ()=>getId(visitBtn))} oncl>Mark Visited</button> */}
       <br />
       <button onClick={(()=>handleFlags(item.flags.png))}>Add Flag</button>
       <br />

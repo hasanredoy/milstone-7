@@ -31,9 +31,9 @@ export default function Addition() {
   useEffect(() => {
     localStorage.setItem('set', JSON.stringify(count))
   }, [count])
-  function changeBg(){
+  // function changeBg(){
     
-  }
+  // }
 
   return (
     <div className="marg">

@@ -6,13 +6,18 @@ const Countries = () => {
   const [countries, setCountries] = useState([])
   const [visitedCountries, setVisitedCountries] = useState([])
   const [initialFlags , setFlags] = useState([])
-
-  const handleVisitedCountries = country =>{
-    
+ 
+ const handleVisitedCountries = (country , visitBtn) =>{
+    console.log(visitBtn)
     // note : use state use korar somoy je array pawa jay oi array er modde push ba pop kaj kore na tai niceher system onujai array ke copy kore tarpore new value set korte hoy 
-
+    
+    if(visitedCountries.includes(country)){
+    //  visitBtn.setAttribute(disabled)
+    return
+    }
     const newVIsitedCountries= [...visitedCountries, country]
     setVisitedCountries(newVIsitedCountries)
+    
     // const ul = document.getElementById('ul')
     // const li = document.createElement('li')
     // li.innerHTML=country
@@ -21,6 +26,9 @@ const Countries = () => {
 
   const handleFlags =(flags)=>{
     // console.log(flags)
+    if(initialFlags.includes(flags)){
+      return
+     }
     const setFlag= [...initialFlags, flags]
     setFlags(setFlag)
   }
