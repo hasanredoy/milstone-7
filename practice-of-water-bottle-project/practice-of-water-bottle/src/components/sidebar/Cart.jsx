@@ -13,7 +13,12 @@ const Cart = ({cart}) => {
   return (
     <div className=' w-[25%] h-full p-2 rounded-md bg-white'>
       <h1 className='text-2xl text-center font-bold'> Cart</h1>
-      <div className="divider"></div>
+      <div className="divider divide-cyan-300"></div>
+      <div className='flex justify-between border-b-2 border-gray-400 pb-1'>
+        <h2 className=' text-xl font-bold'>Product Name</h2>
+        <h2 className=' text-xl font-bold'>Price</h2>
+
+      </div>
       <div>
         {
           cart.map((sCart ,index) => <SingleCart key={index} cart={sCart}></SingleCart>)

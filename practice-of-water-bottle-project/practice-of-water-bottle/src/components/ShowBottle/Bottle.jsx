@@ -29,7 +29,8 @@ const Bottle = ({bottle, handleCartBtn,handleStock}) => {
 
 Bottle.propTypes = {
   bottle: PropTypes.object,
-  handleCartBtn: PropTypes.func
+  handleCartBtn: PropTypes.func,
+  handleStock: PropTypes.func
 };
 
 export default Bottle;

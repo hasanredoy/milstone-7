@@ -6,9 +6,10 @@ Bottles.propTypes = {
   bottle:PropTypes.object,
   bottles:PropTypes.func,
   handleCartBtn:PropTypes.func,
+  handleStock:PropTypes.func,
 };
 
-function Bottles({handleCartBtn,handleStock}) {
+function Bottles({handleCartBtn, handleStock}) {
   const[bottles, setBottles]=useState([])
 // console.log(bottle);
   useEffect(()=>{
