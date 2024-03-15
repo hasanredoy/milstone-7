@@ -1,12 +1,12 @@
 
 import PropTypes from 'prop-types';
 
-const Bottle = ({bottle, handleCartBtn}) => {
+const Bottle = ({bottle, handleCartBtn,toggle}) => {
   // const { name, price, image, stock } = bottle
   // console.log(bottle);
   return (
     <div className='flex lg:flex-row'>
-      <div className="card  bg-base-100  shadow-2xl">
+      <div className={"card  bg-white  shadow-2xl"+(toggle ?' bg-slate-400':'bg-white')}>
         <figure className="px-5 pt-3">
           <img src={bottle.img} />
         </figure>
@@ -29,6 +29,7 @@ const Bottle = ({bottle, handleCartBtn}) => {
 
 Bottle.propTypes = {
   bottle: PropTypes.object,
+  toggle: PropTypes.object,
   handleCartBtn: PropTypes.func,
   handleRemove: PropTypes.func
 };

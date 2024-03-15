@@ -4,12 +4,13 @@ import Bottle from '../ShowBottle/Bottle';
 
 Bottles.propTypes = {
   bottle:PropTypes.object,
+  toggle:PropTypes.object,
   bottles:PropTypes.func,
   handleCartBtn:PropTypes.func,
   handleRemove:PropTypes.func,
 };
 
-function Bottles({handleCartBtn, handleRemove}) {
+function Bottles({handleCartBtn, handleRemove,toggle}) {
   const[bottles, setBottles]=useState([])
 // console.log(bottle);
   useEffect(()=>{
@@ -23,7 +24,9 @@ function Bottles({handleCartBtn, handleRemove}) {
         bottles.map(bottle => <Bottle key={bottle.id} 
           handleCartBtn={handleCartBtn}
           handleRemove={handleRemove}
-          bottle={bottle}></Bottle>)
+          bottle={bottle}
+          toggle={toggle}
+          ></Bottle>)
       }
     </div>
   );
