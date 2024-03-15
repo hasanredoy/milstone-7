@@ -1,5 +1,5 @@
 const getStorage =()=>{
-  const include = [localStorage.getItem('cart')]
+  const include = localStorage.getItem('cart')
   if(include){
    return JSON.parse(include)
   }

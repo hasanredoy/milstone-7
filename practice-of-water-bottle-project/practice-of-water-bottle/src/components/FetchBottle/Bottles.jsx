@@ -6,10 +6,10 @@ Bottles.propTypes = {
   bottle:PropTypes.object,
   bottles:PropTypes.func,
   handleCartBtn:PropTypes.func,
-  handleStock:PropTypes.func,
+  handleRemove:PropTypes.func,
 };
 
-function Bottles({handleCartBtn, handleStock}) {
+function Bottles({handleCartBtn, handleRemove}) {
   const[bottles, setBottles]=useState([])
 // console.log(bottle);
   useEffect(()=>{
@@ -22,7 +22,7 @@ function Bottles({handleCartBtn, handleStock}) {
       {
         bottles.map(bottle => <Bottle key={bottle.id} 
           handleCartBtn={handleCartBtn}
-          handleStock={handleStock}
+          handleRemove={handleRemove}
           bottle={bottle}></Bottle>)
       }
     </div>
